@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CardNumber</name>
+   <name>input__password_accountNumber</name>
    <tag></tag>
-   <elementGuidId>d2551459-7cf6-4a5d-80c8-81a148099be0</elementGuidId>
+   <elementGuidId>8b482483-1bf7-46dc-b775-5cdca1b69140</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@name = 'cardNumber' and @id = 'cardNumber' and @type = 'text']</value>
+         <value>//input[@name = 'accountNumber' and @id = 'accountNumber' and @type = 'text']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='password_accountNumber']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -24,14 +28,14 @@
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>cardNumber</value>
+      <value>accountNumber</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>cardNumber</value>
+      <value>accountNumber</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -59,14 +63,14 @@
       <matchCondition>equals</matchCondition>
       <name>maxlength</name>
       <type>Main</type>
-      <value>16</value>
+      <value>21</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
-      <value>9</value>
+      <value>11</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -80,36 +84,36 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;password_cardNumber&quot;)</value>
+      <value>id(&quot;password_accountNumber&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
-      <value>//input[@id='password_cardNumber']</value>
+      <value>//input[@id='password_accountNumber']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//form[@id='form1']/input[14]</value>
+      <value>//div[@id='maincontent-2col']/form/input[18]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[5]/following::input[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[9]/following::input[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[6]/preceding::input[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[10]/preceding::input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
-      <value>//input[14]</value>
+      <value>//input[18]</value>
    </webElementXpaths>
 </WebElementEntity>

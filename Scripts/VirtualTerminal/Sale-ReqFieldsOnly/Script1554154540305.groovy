@@ -75,7 +75,7 @@ WebUI.verifyTextPresent('Virginia',true)
 
 WebUI.verifyTextPresent('22201',true)
 
-
+println "VT-Sale-ReqFieldsOnly executed successfully"
 
 //WebUI.closeBrowser()
 

@@ -12,29 +12,32 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+	def numOfRows = findTestData('LoginTestData').getRowNumbers();
+	println numOfRows
 
-WebUI.maximizeWindow()
+for(def row = 1; row <= numOfRows; row ++){
 
-WebUI.navigateToUrl('https://qa.velocitypayment.com/admin/imtiaz')
+	WebUI.openBrowser('https://qa.velocitypayment.com/admin/imtiaz')
 
-if (WebUI.verifyElementPresent(findTestObject('Login_Page/Login_Username'), 30)) {
+	WebUI.maximizeWindow()
+
+	//WebUI.navigateToUrl('https://qa.velocitypayment.com/admin/imtiaz')
+	if (WebUI.verifyElementPresent(findTestObject('Login_Page/Login_Username'), 30)) {
     System.out.println('We are on Login Page, start populating the fields')
 
-    WebUI.setText(findTestObject('Login_Page/Login_Username'), username)
+    WebUI.setText(findTestObject('Login_Page/Login_Username'), findTestData('LoginTestData').getValue("Username", row))
 
-    WebUI.setText(findTestObject('Login_Page/Login_Password'), password)
+    WebUI.setText(findTestObject('Login_Page/Login_Password'), findTestData('LoginTestData').getValue("Password", row))
 
     WebUI.click(findTestObject('Login_Page/Login_Submit'))
-} else {
-    System.out.println('Not on the Login Page, exiting test')
+	} else {
+    	System.out.println('Not on the Login Page, exiting test')
+}
+		if (WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/AccessAhmedPayment'),30))
+			{println "Username and Password are Valid"}
+		else
+			{println "Username and Password are not valid"}	
+				
 }
 
-
-
-/*//WebUI.click(findTestObject('Login_Page/Login_Logout'))
-
-//WebUI.closeBrowser()
-*/

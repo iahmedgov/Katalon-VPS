@@ -16,7 +16,7 @@ import internal.GlobalVariable as GlobalVariable
 	def numOfRows = findTestData('LoginTestData').getRowNumbers();
 	println numOfRows
 
-	//hello bc
+	//hello bc MC
 	
 	
 for(def row = 1; row <= numOfRows; row ++){

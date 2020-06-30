@@ -13,6 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+
 // Emulator URL: https://qa.velocitypayment.com/agency/config.do?action=editor
 def numOfRows = findTestData('IWP30PayNowCC').getRowNumbers()
 
@@ -131,89 +132,66 @@ for (def row = 1; row <= numOfRows; row++) {
 	
 	//Begin setData
 
+									//  findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/MV')
 
-
-			WebUI.selectOptionByValue(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/MV'), 
-				    '3_0', true)
+			WebUI.selectOptionByValue(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/MV'),MV, true)
 				
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/Amount'), 
-				    '20.00')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/Amount'),Amount)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/CAN'), 
-			    '256987')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/CAN'),CAN)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/Action'), 
-			    'paynow')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/Action'),Action)
 			
 			//WebUI.click(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/td'))
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/Lang'), 
-			    'en_us')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/Lang'),Lang)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/Fname'), 
-			    'mku')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/Fname'),Fname)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/Lname'), 
-			    'dfdf')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/Lname'),Lname)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/AL1'), 
-			    '125 main')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/AL1'),AL1)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/AL2'), 
-			    'suti')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/AL2'),AL2)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/Country'), 
-			    '840')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/Country'),Country)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/City'), 
-			    'arlington')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/City'),City)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/State'), 
-			    'VA')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/State'),State)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/ZIP'), 
-			    '22201')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/ZIP'),ZIP)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/Order'), 
-			    '1234')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/Order'),Order)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/CompanyName'), 
-			    'comp')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/Company'),CompanyName)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/Email'), 
-			    'iahmed@govolution.com')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/Email'),Email)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/UDF1'), 
-			    '1')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/UDF1'),UDF1)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/UDF2'), 
-			    '2')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/UDF2'),UDF2)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/UDF3'), 
-			    '3')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/UDF3'),UDF3)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/UDF4'), 
-			    '4')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/UDF4'),UDF4)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/UDF5'), 
-			    '5')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/UDF5'),UDF5)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/UDF6'), 
-			    '6')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/UDF6'),UDF6)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/UDF7'), 
-			    '7')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/UDF7'),UDF7)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/UDF8'), 
-			    '8')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/UDF8'),UDF8)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/UDF9'), 
-			    '9')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/UDF9'),UDF9)
 			
-			WebUI.setText(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/UDF10'), 
-			    '10')
+			WebUI.setText(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/UDF10'),UDF10)
+			Thread.sleep(10000)
 			
-			WebUI.click(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/Submit'))
+			WebUI.click(findTestObject('Object Repository/IWP30/IWP30Emulator/Page_VRelay30Emulator/Submit'))
+			
+			
 
 			// End setData
 

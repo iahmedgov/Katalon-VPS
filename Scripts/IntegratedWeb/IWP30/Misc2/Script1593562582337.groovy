@@ -18,10 +18,21 @@ import org.openqa.selenium.Keys as Keys
 
 // Open Browser with QA Test Harness
 
-WebUI.openBrowser('https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html')
+//WebUI.openBrowser('https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html')
 
 
 //WebUI.navigateToUrl('https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/')
 
 //WebUI.closeBrowser()
 
+def x 
+
+
+	if (x!=null)
+	{
+		println("both x and y are greater than 5")
+	}
+	else
+	{
+		println("Heelo world")
+	}

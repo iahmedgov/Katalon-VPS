@@ -59,10 +59,10 @@ class emulatorIWP30 {
 		println("Hello World")
 
 		//Begin Get Data
-		
+
 		def dFile = gsdDataFile
 		println(dFile)
-		
+
 		MV = findTestData(dFile).getValue('MV', row)
 		println(MV)
 
@@ -166,116 +166,115 @@ class emulatorIWP30 {
 		UDF10 = findTestData(dFile).getValue('UDF10', row)
 
 		println(UDF10)
-		
+
 		//End Get Data
-		
+
 		//WebUI.openBrowser('https://qa.velocitypayment.com/agency/config.do?action=editor')
-		
-				//WebUI.maximizeWindow()
-		
-				//Begin setData
-		
-				//  findTestObject('IWP30/Page_VRelay30Emulator/MV')
-		
-				WebUI.selectOptionByValue(findTestObject('IWP30/Page_VRelay30Emulator/MV'),MV, true)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Amount'),Amount)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/CAN'),CAN)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Action'),Action)
-		
-				//WebUI.click(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/td'))
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Lang'),Lang)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Fname'),Fname)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Lname'),Lname)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/AL1'),AL1)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/AL2'),AL2)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Country'),Country)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/City'),City)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/State'),State)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/ZIP'),ZIP)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Order'),Order)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Company'),CompanyName)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Email'),Email)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF1'),UDF1)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF2'),UDF2)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF3'),UDF3)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF4'),UDF4)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF5'),UDF5)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF6'),UDF6)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF7'),UDF7)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF8'),UDF8)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF9'),UDF9)
-		
-				WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF10'),UDF10)
-				Thread.sleep(10000)
-		
-				WebUI.click(findTestObject('IWP30/Page_VRelay30Emulator/Submit'))
-		
-				// End Set Data
+
+		//WebUI.maximizeWindow()
+
+		//Begin setData
+
+		//  findTestObject('IWP30/Page_VRelay30Emulator/MV')
+
+		WebUI.selectOptionByValue(findTestObject('IWP30/Page_VRelay30Emulator/MV'),MV, true)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Amount'),Amount)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/CAN'),CAN)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Action'),Action)
+
+		//WebUI.click(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/td'))
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Lang'),Lang)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Fname'),Fname)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Lname'),Lname)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/AL1'),AL1)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/AL2'),AL2)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Country'),Country)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/City'),City)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/State'),State)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/ZIP'),ZIP)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Order'),Order)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Company'),CompanyName)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Email'),Email)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF1'),UDF1)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF2'),UDF2)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF3'),UDF3)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF4'),UDF4)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF5'),UDF5)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF6'),UDF6)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF7'),UDF7)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF8'),UDF8)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF9'),UDF9)
+
+		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF10'),UDF10)
+		Thread.sleep(10000)
+
+		WebUI.click(findTestObject('IWP30/Page_VRelay30Emulator/Submit'))
+
+		// End Set Data
 	}
 
 
-	
+
 	@Keyword
-	def getSetTestHarness(int gsthRow, String gsthDataFile)
-	{
-		
+	def getSetTestHarness(int gsthRow, String gsthDataFile) {
+
 		def gsthDFile = gsthDataFile
 		println(gsthDFile)
-		
+
 		// Begin Get Data
 		AppID = findTestData(gsthDFile).getValue('AppID', gsthRow)
 		println(MV)
-		
+
 		MessageVersion = findTestData(gsthDFile).getValue('MessageVersion', gsthRow)
 		println(MessageVersion)
-		
+
 		def genRandomRemID = org.apache.commons.lang.RandomStringUtils.random(12, true, true)
-		
+
 		//Verify if we are on the TestHarness page and Populate the TestHarness
-		
+
 		if (WebUI.verifyElementPresent(findTestObject('Object Repository/IWP30/Page_QATestHarness/RemittanceID'), 30))
 		{
-		println("We are on Test Harness page, start populating")
-		WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/ApplicationID'),AppID)
-		WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/MessageVersion'),MessageVersion)
-		WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/RemittanceID'),genRandomRemID)
-		WebUI.click(findTestObject('Object Repository/IWP30/Page_QATestHarness/SubmitButton'))
-		
+			println("We are on Test Harness page, start populating")
+			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/ApplicationID'),AppID)
+			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/MessageVersion'),MessageVersion)
+			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/RemittanceID'),genRandomRemID)
+			WebUI.click(findTestObject('Object Repository/IWP30/Page_QATestHarness/SubmitButton'))
+
 		}
 		else {
-		
-		println ("Not on Test Harness page")
+
+			println ("Not on Test Harness page")
 		}
 
-		
+
 	}
-	
-	
-	
+
+
+
 
 
 	@Keyword

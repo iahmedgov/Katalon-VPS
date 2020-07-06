@@ -25,14 +25,39 @@ import org.openqa.selenium.Keys as Keys
 
 //WebUI.closeBrowser()
 
-def x 
+	def numOfRows = findTestData('IWP30PayNowCC').getRowNumbers()
+
+println(numOfRows)
+
+	def dataFile = "IWP30PayNowCC"
 
 
-	if (x!=null)
-	{
-		println("both x and y are greater than 5")
+// For each row in the spreadsheet, execute the given steps	
+//for (def row = 1; row <= numOfRows; row++) {
+//	
+//	def CCAmount = findTestData('IWP30PayNowCC').getValue('CCAmount', row)
+//	
+//	println ("Iteration: "+row)
+//	println("CCAmount: " + CCAmount)
+//		
+////	if ((CCAmount != null) && (!CCAmount.isEmpty()))
+//	if (!CCAmount.isEmpty())
+//	{
+//		println 22
+//	}
+//	else 
+//	{ println 33}
+//	
+//	
+//}
+	
+	try {
+		int x = 4/0
+		
+		println x
+		
 	}
-	else
-	{
-		println("Heelo world")
+	catch (Exception exp) {
+		println exp.getMessage()
 	}
+	

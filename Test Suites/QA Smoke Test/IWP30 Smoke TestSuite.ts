@@ -13,7 +13,13 @@
    <testCaseLink>
       <guid>c6b99788-3f78-4c63-929c-25e7b06bca4d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/IntegratedWeb/IWP30/PayNowReqFieldsCC</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9ccd3820-d9a3-4f5d-819c-01b4f676bef1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IntegratedWeb/IWP30/Misc</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

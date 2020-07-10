@@ -15,6 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+//import Keywords.customClasses
 
 // Open Browser with QA Test Harness
 
@@ -51,32 +52,45 @@ println(numOfRows)
 //	
 //}
 	
-	try {
-		int x = 4/0
+//	try {
+//		int x = 4/0
+//		
+//		println x
+//		
+//	}
+//	catch (Exception exp) {
+//		println exp.getMessage()
+//	}
+//	
+//	//Hello from Pavneet
+//	//Pavneet added another line
+//	//Pavneet added one more line
+//	//Imtiaz added yet another line
+//	
+//int a = 6
+//int b = 7
+//
+//	
+//	if (a == b)
+//	{
+//		println "a  is equlat to b"
+//	}
+//	else {println "a is not equal to b"}
+//	
+	
+	for (def row = 1; row <= numOfRows; row++) {
 		
-		println x
+		WebUI.openBrowser('https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html')
+		//WebUI.navigateToUrl('https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html')
+		WebUI.maximizeWindow()
+		
+//		Vrelay30class myMClass = new Vrelay30class()
+//		myMClass.getDataMethod(row,dataFile)
+		
+//		CustomKeywords.'iwpPages.emulatorIWP30.getSetData'(row,dataFile)
+//CustomKeywords.'customClasses.Vrelay30class.getDataMethod'(row,dataFile)
+		CustomKeywords.'iwpPages.TestHarnessPage.setDataMethod'(row,dataFile)
 		
 	}
-	catch (Exception exp) {
-		println exp.getMessage()
-	}
-	
-	//Hello from Pavneet
-	//Pavneet added another line
-	//Pavneet added one more line
-	//Imtiaz added yet another line
-	
-int a = 6
-int b = 7
-
-	
-	if (a == b)
-	{
-		println "a  is equlat to b"
-	}
-	else {println "a is not equal to b"}
-	
-	
-	
 	
 	

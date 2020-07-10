@@ -65,3 +65,18 @@ println(numOfRows)
 	//Pavneet added another line
 	//Pavneet added one more line
 	//Imtiaz added yet another line
+	
+int a = 6
+int b = 7
+
+	
+	if (a == b)
+	{
+		println "a  is equlat to b"
+	}
+	else {println "a is not equal to b"}
+	
+	
+	
+	
+	

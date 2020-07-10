@@ -20,6 +20,12 @@ def numOfRows = findTestData('IWP30PayNowCC').getRowNumbers()
 println(numOfRows)
 
 for (def row = 1; row <= numOfRows; row++) {
+	
+	
+// Exception Handling	
+	
+	try {
+	
     // Begin getData	
     def MV = findTestData('IWP30PayNowCC').getValue('MV', row)
 
@@ -528,12 +534,25 @@ for (def row = 1; row <= numOfRows; row++) {
 					else {println("Email field is missing on CC Payment Entry page")}
 				
 				
-				
-				
-				
-				
-				
-				
+					
+					if (WebUI.verifyElementPresent(findTestObject('Object Repository/IWP30/Page_CCPaymentEntry/TermCondCheckBox'),30))
+						{
+							WebUI.check(findTestObject('Object Repository/IWP30/Page_CCPaymentEntry/TermCondCheckBox'))
+						}
+					else {println("Terms and Condition checkbox is missing on the CC Payment Entry page")}
+					
+					
+					
+					if (WebUI.verifyElementPresent(findTestObject('Object Repository/IWP30/Page_CCPaymentEntry/ContinueButton'),30))
+						{
+							WebUI.click(findTestObject('Object Repository/IWP30/Page_CCPaymentEntry/ContinueButton'))
+						}
+					else {println("Continue button is missing on the CC Payment Entry page")}
+					
+//End Populating the Credit Card Payment Entry page					
+					
+					
+			
 			}
 			else
 			{
@@ -541,10 +560,67 @@ for (def row = 1; row <= numOfRows; row++) {
 			}
 			
 			
+// After selecting the Continue button			
+// On the Confirmation page
+// Verify static text and select Confirm button
+			
+			if (WebUI.verifyTextPresent(("Please verify the following information"), false))
+				{
+					println "Please verify the following information text is present on the Confirmation page"
+				}
+			else {"Please verify the following information text is not present on the Confirmation page"}		
 			
 			
 			
+			if (WebUI.verifyTextPresent(("Is this information correct?"), false))
+				{
+					println "Is this information correct text is present on the Confirmation page"
+				}
+			else {println "Is this information correct text is not present on the Confirmation page"}
 			
 			
 			
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/IWP30/Page_Confirmation/ConfirmButton'),30))
+				{
+					WebUI.click(findTestObject('Object Repository/IWP30/Page_Confirmation/ConfirmButton'))
+					//WebUI.waitForPageLoad(10)
+				}
+			else {println  "Confirm button is missing on the Confirmation page"}				
+	
+				
+// After selecting the Confirm button
+// On the Receipt page
+// Verify static text
+			
+			Thread.sleep(10000)
+			//WebUI.waitForPageLoad(10)
+			
+			if (WebUI.verifyTextPresent(("Successful Payment Receipt"), false))
+				{
+					println "Successful Payment Receipt text is present on the Receipt page"
+				}
+			else {"Successful Payment Receipt text is not present on the Receipt page"}
+			
+			
+			if (WebUI.verifyTextPresent(("Please print this receipt for your records"), false))
+				{
+					println "Please print this receipt for your records text is present on the Receipt page"
+				}
+			else {"Please print this receipt for your records text is not present on the Receipt page"}
+			
+			
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/IWP30/Page_Receipt/ExitButton'),30))
+				{
+					println "Exit Button is present on the Receipt page"
+				}	
+			else {println "Exit button is not present on the Receipt page"}				
+			
+			
+	}
+	catch (Exception exp)
+		{
+			println exp.getMessage()
+		}
+				
+						
 }			

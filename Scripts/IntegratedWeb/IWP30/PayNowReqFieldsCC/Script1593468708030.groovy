@@ -229,8 +229,8 @@ for (def row = 1; row <= numOfRows; row++) {
 	
 
     // End getData
-    WebUI.openBrowser('https://qa.velocitypayment.com/agency/config.do?action=editor')
-
+    //WebUI.openBrowser('https://qa.velocitypayment.com/agency/config.do?action=editor')
+	WebUI.openBrowser(GlobalVariable.urlEmulator)
     WebUI.maximizeWindow() 
 	
 	//Begin setData
@@ -300,8 +300,8 @@ for (def row = 1; row <= numOfRows; row++) {
 
 			WebUI.closeBrowser()
 			
-			WebUI.openBrowser('https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html')
-			//WebUI.navigateToUrl('https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html')
+			//WebUI.openBrowser('https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html')
+			WebUI.openBrowser(GlobalVariable.urlTestHarness)
 			WebUI.maximizeWindow()
 			
 			def genRemIDVoid = org.apache.commons.lang.RandomStringUtils.random(12, true, true)
@@ -622,5 +622,6 @@ for (def row = 1; row <= numOfRows; row++) {
 			println exp.getMessage()
 		}
 				
-						
+		// Close the browser
+		WebUI.closeBrowser()
 }			

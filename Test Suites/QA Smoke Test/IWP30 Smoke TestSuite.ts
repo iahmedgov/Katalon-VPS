@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>c6b99788-3f78-4c63-929c-25e7b06bca4d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/IntegratedWeb/IWP30/PayNowReqFieldsCC</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -21,5 +21,23 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/IntegratedWeb/IWP30/Misc</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7ee1241a-6d8a-4c86-8a3f-2716ac41504b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IntegratedWeb/IWP30/AmountLessThanMinCC</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4458786a-0f74-4777-afde-a5911d14f17e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IntegratedWeb/IWP30/AmountMoreThanMaxCC</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>00961a19-3931-4a1f-ad9e-6b1f8a34508f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IntegratedWeb/IWP30/MissingReqFieldsCC</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

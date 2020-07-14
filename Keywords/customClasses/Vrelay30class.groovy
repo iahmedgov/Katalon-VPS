@@ -21,47 +21,41 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class Vrelay30class {
-	
+
 	def AppID
 	def MessageVersion
-	
-	
-	def getDataMethod(int rowM, String dataFileM)
-	{
-		
+
+
+	def getDataMethod(int rowM, String dataFileM) {
+
 		def fileM = dataFileM
 		println(fileM)
-		
+
 		AppID = findTestData(fileM).getValue('AppID', rowM)
 		println(AppID)
-		
-		
+
+
 		MessageVersion = findTestData(fileM).getValue('MessageVersion', rowM)
 		println(MessageVersion)
-		
-		
-		
 	}
-	
-	
-	def setDataMethod(int rowS, String dataFileS)
-	{
-		
+
+
+	def setDataMethod(int rowS, String dataFileS) {
+
 		this.getDataMethod(rowS, dataFileS)
-		
-			def genRemIDVoid = org.apache.commons.lang.RandomStringUtils.random(12, true, true)
-		
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/IWP30/Page_QATestHarness/RemittanceID'), 30))
-			{
-				println("We are on Test Harness page, start populating")
-			
-					WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/ApplicationID'),AppID)
-					WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/MessageVersion'),MessageVersion)
-					WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/RemittanceID'),genRemIDVoid)
-			}
-			
-			else {println ("Not on Test Harness page")}
+
+		def genRemIDVoid = org.apache.commons.lang.RandomStringUtils.random(12, true, true)
+
+		if (WebUI.verifyElementPresent(findTestObject('Object Repository/IWP30/Page_QATestHarness/RemittanceID'), 30)) {
+			println("We are on Test Harness page, start populating")
+
+			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/ApplicationID'),AppID)
+			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/MessageVersion'),MessageVersion)
+			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/RemittanceID'),genRemIDVoid)
+		}
+
+		else {
+			println ("Not on Test Harness page")
+		}
 	}
-	
-	
 }

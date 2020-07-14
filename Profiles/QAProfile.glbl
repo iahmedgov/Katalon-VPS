@@ -19,4 +19,14 @@
       <initValue>'hello2222'</initValue>
       <name>Password</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>QA Emulator URL</description>
+      <initValue>'https://qa.velocitypayment.com/agency/config.do?action=editor'</initValue>
+      <name>urlEmulator</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>QA TestHarness URL</description>
+      <initValue>'https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html'</initValue>
+      <name>urlTestHarness</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

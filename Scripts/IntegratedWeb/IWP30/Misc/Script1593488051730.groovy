@@ -36,7 +36,8 @@ for (def row = 1; row <= numOfRows; row++) {
 //=======================================	
 	
 //Step1	Open Browser with Emulator URL
-    WebUI.openBrowser('https://qa.velocitypayment.com/agency/config.do?action=editor')
+    //WebUI.openBrowser('https://qa.velocitypayment.com/agency/config.do?action=editor')
+	WebUI.openBrowser(GlobalVariable.urlEmulator)
     WebUI.maximizeWindow()
 //========================================	
 
@@ -49,8 +50,9 @@ for (def row = 1; row <= numOfRows; row++) {
 //=======================================
 
 //Step3 Open Browser with QA Test Harness		
-    WebUI.openBrowser('https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html')
-    WebUI.maximizeWindow()
+    //WebUI.openBrowser('https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html')
+	WebUI.openBrowser(GlobalVariable.urlTestHarness)
+	WebUI.maximizeWindow()
 	
 //=======================================
 
@@ -138,7 +140,9 @@ for (def row = 1; row <= numOfRows; row++) {
 			}
 		else {println "Exit button is not present on the Receipt page"}
 			
-	
+//=======================================
 	
 
+		WebUI.closeBrowser()
+		
 }

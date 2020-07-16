@@ -238,205 +238,205 @@ class emulatorIWP30 {
 	}
 
 
-// This method populates the Emulator with very few fields like Amount, MV, CAN, Action, Lang
-// UDFs 3, 4, 5, 6, 7, 8, 9, 10		
-	
+	// This method populates the Emulator with very few fields like Amount, MV, CAN, Action, Lang
+	// UDFs 3, 4, 5, 6, 7, 8, 9, 10
+
 	@Keyword
 	def setDataEmulatorStandard()
 	{
-		
-		
+
+
 		if (WebUI.verifyElementPresent(findTestObject('IWP30/Page_VRelay30Emulator/Amount'), 30))
 		{
-		
+
 			println ("We are on the Emulator page, start populating")
-			
+
 			WebUI.selectOptionByValue(findTestObject('IWP30/Page_VRelay30Emulator/MV'),"3.0", true)
-				
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Amount'),"10.50")
-		
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/CAN'),"54654701")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Action'),"PayNow")
-			
-						
+
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Lang'),"en_US")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Fname'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Lname'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/AL1'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/AL2'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Country'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/City'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/State'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/ZIP'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Order'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Company'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Email'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF1'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF2'),"")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF3'),"data 3")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF4'),"data 4")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF5'),"data 5")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF6'),"data 6")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF7'),"Orange")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF8'),"Soccer")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF9'),"data 9")
-			
+
 			WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF10'),"data 10")
 			Thread.sleep(2000)
-			
+
 			WebUI.click(findTestObject('IWP30/Page_VRelay30Emulator/Submit'))
-			
+
 			Thread.sleep(5000)
-		
+
 			// End setData
-		
+
 			WebUI.closeBrowser()
-				
-		
+
+
 		}
 		else {println ("We are not on Emulator page")}
-		
+
 	}
-	
-	
-	
-	
-	
-	
-	
-
-//	@Keyword
-//	def getSetTestHarness(int gsthRow, String gsthDataFile) {
-//
-//		def gsthDFile = gsthDataFile
-//		println(gsthDFile)
-//
-//		// Begin Get Data
-//		AppID = findTestData(gsthDFile).getValue('AppID', gsthRow)
-//		println(MV)
-//
-//		MessageVersion = findTestData(gsthDFile).getValue('MessageVersion', gsthRow)
-//		println(MessageVersion)
-//
-//		def genRandomRemID = org.apache.commons.lang.RandomStringUtils.random(12, true, true)
-//
-//		//Verify if we are on the TestHarness page and Populate the TestHarness
-//
-//		if (WebUI.verifyElementPresent(findTestObject('Object Repository/IWP30/Page_QATestHarness/RemittanceID'), 30))
-//		{
-//			println("We are on Test Harness page, start populating")
-//			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/ApplicationID'),AppID)
-//			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/MessageVersion'),MessageVersion)
-//			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/RemittanceID'),genRandomRemID)
-//			WebUI.click(findTestObject('Object Repository/IWP30/Page_QATestHarness/SubmitButton'))
-//
-//		}
-//		else {
-//
-//			println ("Not on Test Harness page")
-//		}
-//
-//
-//	}
 
 
 
 
 
-//	@Keyword
-//	def setData() {
-//
-//		WebUI.openBrowser('https://qa.velocitypayment.com/agency/config.do?action=editor')
-//
-//		WebUI.maximizeWindow()
-//
-//		//Begin setData
-//
-//		//  findTestObject('IWP30/Page_VRelay30Emulator/MV')
-//
-//		WebUI.selectOptionByValue(findTestObject('IWP30/Page_VRelay30Emulator/MV'),MV, true)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Amount'),Amount)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/CAN'),CAN)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Action'),Action)
-//
-//		//WebUI.click(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/td'))
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Lang'),Lang)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Fname'),Fname)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Lname'),Lname)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/AL1'),AL1)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/AL2'),AL2)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Country'),Country)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/City'),City)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/State'),State)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/ZIP'),ZIP)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Order'),Order)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Company'),CompanyName)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Email'),Email)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF1'),UDF1)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF2'),UDF2)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF3'),UDF3)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF4'),UDF4)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF5'),UDF5)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF6'),UDF6)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF7'),UDF7)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF8'),UDF8)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF9'),UDF9)
-//
-//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF10'),UDF10)
-//		Thread.sleep(10000)
-//
-//		WebUI.click(findTestObject('IWP30/Page_VRelay30Emulator/Submit'))
-//
-//
-//
-//
-//
-//	}
+
+
+
+	//	@Keyword
+	//	def getSetTestHarness(int gsthRow, String gsthDataFile) {
+	//
+	//		def gsthDFile = gsthDataFile
+	//		println(gsthDFile)
+	//
+	//		// Begin Get Data
+	//		AppID = findTestData(gsthDFile).getValue('AppID', gsthRow)
+	//		println(MV)
+	//
+	//		MessageVersion = findTestData(gsthDFile).getValue('MessageVersion', gsthRow)
+	//		println(MessageVersion)
+	//
+	//		def genRandomRemID = org.apache.commons.lang.RandomStringUtils.random(12, true, true)
+	//
+	//		//Verify if we are on the TestHarness page and Populate the TestHarness
+	//
+	//		if (WebUI.verifyElementPresent(findTestObject('Object Repository/IWP30/Page_QATestHarness/RemittanceID'), 30))
+	//		{
+	//			println("We are on Test Harness page, start populating")
+	//			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/ApplicationID'),AppID)
+	//			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/MessageVersion'),MessageVersion)
+	//			WebUI.setText(findTestObject('Object Repository/IWP30/Page_QATestHarness/RemittanceID'),genRandomRemID)
+	//			WebUI.click(findTestObject('Object Repository/IWP30/Page_QATestHarness/SubmitButton'))
+	//
+	//		}
+	//		else {
+	//
+	//			println ("Not on Test Harness page")
+	//		}
+	//
+	//
+	//	}
+
+
+
+
+
+	//	@Keyword
+	//	def setData() {
+	//
+	//		WebUI.openBrowser('https://qa.velocitypayment.com/agency/config.do?action=editor')
+	//
+	//		WebUI.maximizeWindow()
+	//
+	//		//Begin setData
+	//
+	//		//  findTestObject('IWP30/Page_VRelay30Emulator/MV')
+	//
+	//		WebUI.selectOptionByValue(findTestObject('IWP30/Page_VRelay30Emulator/MV'),MV, true)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Amount'),Amount)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/CAN'),CAN)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Action'),Action)
+	//
+	//		//WebUI.click(findTestObject('IWP30/IWP30Emulator/Page_VRelay30Emulator/Page_VRelay30Emulator/td'))
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Lang'),Lang)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Fname'),Fname)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Lname'),Lname)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/AL1'),AL1)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/AL2'),AL2)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Country'),Country)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/City'),City)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/State'),State)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/ZIP'),ZIP)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Order'),Order)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Company'),CompanyName)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/Email'),Email)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF1'),UDF1)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF2'),UDF2)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF3'),UDF3)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF4'),UDF4)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF5'),UDF5)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF6'),UDF6)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF7'),UDF7)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF8'),UDF8)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF9'),UDF9)
+	//
+	//		WebUI.setText(findTestObject('IWP30/Page_VRelay30Emulator/UDF10'),UDF10)
+	//		Thread.sleep(10000)
+	//
+	//		WebUI.click(findTestObject('IWP30/Page_VRelay30Emulator/Submit'))
+	//
+	//
+	//
+	//
+	//
+	//	}
 
 
 

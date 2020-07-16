@@ -94,3 +94,5 @@ println(numOfRows)
 	}
 	
 	
+	//WebUI.takeScreenshot()
+	

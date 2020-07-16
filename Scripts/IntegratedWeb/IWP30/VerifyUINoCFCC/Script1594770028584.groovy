@@ -184,6 +184,7 @@ import internal.GlobalVariable as GlobalVariable
 		def CZIP = findTestData('VerifyUINoCFCCTestData').getValue('CCZIP', row)
 		def Email = findTestData('VerifyUINoCFCCTestData').getValue('CCEmail', row)
 		def State2 = findTestData('VerifyUINoCFCCTestData').getValue('VerState2', row)
+		def CName2 = findTestData('VerifyUINoCFCCTestData').getValue('VerCCName', row)
 		
 		
 		
@@ -329,7 +330,7 @@ import internal.GlobalVariable as GlobalVariable
 		WebUI.verifyTextPresent(("Card Information"), false)
 		WebUI.verifyTextPresent((CardType), false)
 		
-		WebUI.verifyTextPresent((CName), false)
+		WebUI.verifyTextPresent((CName2), false)
 		
 		WebUI.verifyTextPresent((Last4), false)
 		
@@ -358,7 +359,7 @@ import internal.GlobalVariable as GlobalVariable
 		WebUI.verifyElementPresent(findTestObject('Object Repository/IWP30/Page_Receipt/ExitButton'),30)
 		
 		
-		
+		WebUI.closeBrowser()
 		
 		
 		

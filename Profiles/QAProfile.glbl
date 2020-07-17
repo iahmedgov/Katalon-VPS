@@ -3,7 +3,7 @@
    <description></description>
    <name>QAProfile</name>
    <tag></tag>
-   <defaultProfile>false</defaultProfile>
+   <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://qa.velocitypayment.com/admin/imtiaz'</initValue>

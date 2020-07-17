@@ -17,6 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser(GlobalVariable.urlEmulator)
 
+
 	WebUI.maximizeWindow()
 	
 	//Begin setData

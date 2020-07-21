@@ -21,20 +21,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class achPersonalPaymentEntryPage {
-	
-	
+
+
 	String Amount, UDF1, UDF2, UDF3, UDF4, UDF5, UDF6, UDF7, UDF8, UDF9, UDF10
 	String Fname, Lname, RTN, ACNumber, CACNumber, ACType, Date, AL1, AL2, ZIP, Email
-	
-	
-			@Keyword
-			def getDataACHPPM(int rowM, String dataFileM) 
-			{
-				
-				
-				
-				
-			}
-	
-	
+
+
+	@Keyword
+	def getDataACHPPM(int rowM, String dataFileM) {
+	}
 }

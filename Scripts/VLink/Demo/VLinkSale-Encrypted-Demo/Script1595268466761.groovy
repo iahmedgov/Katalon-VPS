@@ -25,11 +25,11 @@ import internal.GlobalVariable as GlobalVariable
  */
 
 
-def numOfRows = findTestData('DemoVlinkEncryptedTrackTestData').getRowNumbers()
+def numOfRows = findTestData('VLink/DemoVlinkEncryptedTrackTestData').getRowNumbers()
 
 	println(numOfRows)
 
-	def dataFile = "DemoVlinkEncryptedTrackTestData"
+	def dataFile = "VLink/DemoVlinkEncryptedTrackTestData"
 
 
 // For each row in the spreadsheet, execute the given steps
@@ -52,45 +52,50 @@ for (def row = 1; row <= numOfRows; row++) {
 //=======================================
 	
 	
+//Step 3 Verify if Transaction is successful by verifying the static text of 
+// Transaction Approved, No Errors.  If transaction was successful then Void it
 	
+	if (WebUI.verifyTextPresent(("Transaction approved, no errors"), false))
+	{
+		def sdfo = WebUI.getText(findTestObject('Object Repository/Page_VLinkReceipt/pre_STX'))
+		
+		System.out.println('sdfo: ' + sdfo)
+		
+		def remID = sdfo.substring(5, 35).trim()
+		
+		System.out.println('remID: ' + remID)
+		
+		def traxID = sdfo.substring(35,55).trim()
+		
+		System.out.println('traxID: ' + traxID)
+		
+		GlobalVariable.VLinkSaleRemID = remID
+		GlobalVariable.VLinkSaleTranxID = traxID
+		
+		println("Remittance ID: " + GlobalVariable.VLinkSaleRemID)
+		println("Transaction ID: " + GlobalVariable.VLinkSaleTranxID)
+		
+// Void the transaction
+		
+		WebUI.closeBrowser()
+		
+		WebUI.openBrowser('https://dev-algorithm.govolution.com/vlinktest/demo/version_2_0/CC_void.html')
+		
+		WebUI.maximizeWindow()
+		
+		
+		CustomKeywords.'vlinkPages.voidCCPage.setDataVCC'(row,dataFile)
+		
+			if (WebUI.verifyTextPresent(("Transaction approved, no errors"), false))
+			{
+				println("Void transaction was successful")
+			}
+			else {println("Void transaction failed")}
+		
+		
+	}
+	else {println("Sale Transaction Failed, nothing to Void")}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	WebUI.closeBrowser()
 	
 }

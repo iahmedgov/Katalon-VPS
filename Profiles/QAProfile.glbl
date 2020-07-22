@@ -29,4 +29,14 @@
       <initValue>'https://dev-algorithm.govolution.com/vrelaytest/QA/version_2_2/vrelaytest.html'</initValue>
       <name>urlTestHarness</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'987'</initValue>
+      <name>VLinkSaleRemID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'987'</initValue>
+      <name>VLinkSaleTranxID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

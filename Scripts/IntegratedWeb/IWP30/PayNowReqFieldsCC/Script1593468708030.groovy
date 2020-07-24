@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 // Emulator URL: https://qa.velocitypayment.com/agency/config.do?action=editor
-def numOfRows = findTestData('IWP30PayNowCC').getRowNumbers()
+def numOfRows = findTestData('IWPTestData/IWP30PayNowCC').getRowNumbers()
 
 println(numOfRows)
 
@@ -27,200 +27,200 @@ for (def row = 1; row <= numOfRows; row++) {
 	try {
 	
     // Begin getData	
-    def MV = findTestData('IWP30PayNowCC').getValue('MV', row)
+    def MV = findTestData('IWPTestData/IWP30PayNowCC').getValue('MV', row)
 
     println(MV)
 
-    def Amount = findTestData('IWP30PayNowCC').getValue('Amount', row)
+    def Amount = findTestData('IWPTestData/IWP30PayNowCC').getValue('Amount', row)
 
     println(Amount)
 
-    def CAN = findTestData('IWP30PayNowCC').getValue('CAN', row)
+    def CAN = findTestData('IWPTestData/IWP30PayNowCC').getValue('CAN', row)
 
     println(CAN)
 
-    def Action = findTestData('IWP30PayNowCC').getValue('Action', row)
+    def Action = findTestData('IWPTestData/IWP30PayNowCC').getValue('Action', row)
 
     println(Action)
 
-    def Lang = findTestData('IWP30PayNowCC').getValue('Lang', row)
+    def Lang = findTestData('IWPTestData/IWP30PayNowCC').getValue('Lang', row)
 
     println(Lang)
 
-    def Fname = findTestData('IWP30PayNowCC').getValue('Fname', row)
+    def Fname = findTestData('IWPTestData/IWP30PayNowCC').getValue('Fname', row)
 
     println(Fname)
 
-    def Lname = findTestData('IWP30PayNowCC').getValue('Lname', row)
+    def Lname = findTestData('IWPTestData/IWP30PayNowCC').getValue('Lname', row)
 
     println(Lname)
 
-    def AL1 = findTestData('IWP30PayNowCC').getValue('AL1', row)
+    def AL1 = findTestData('IWPTestData/IWP30PayNowCC').getValue('AL1', row)
 
     println(AL1)
 
-    def AL2 = findTestData('IWP30PayNowCC').getValue('AL2', row)
+    def AL2 = findTestData('IWPTestData/IWP30PayNowCC').getValue('AL2', row)
 
     println(AL2)
 
-    def Country = findTestData('IWP30PayNowCC').getValue('Country', row)
+    def Country = findTestData('IWPTestData/IWP30PayNowCC').getValue('Country', row)
 
     println(Country)
 
-    def City = findTestData('IWP30PayNowCC').getValue('City', row)
+    def City = findTestData('IWPTestData/IWP30PayNowCC').getValue('City', row)
 
     println(City)
 
-    def State = findTestData('IWP30PayNowCC').getValue('State', row)
+    def State = findTestData('IWPTestData/IWP30PayNowCC').getValue('State', row)
 
     println(State)
 
-    def ZIP = findTestData('IWP30PayNowCC').getValue('ZIP', row)
+    def ZIP = findTestData('IWPTestData/IWP30PayNowCC').getValue('ZIP', row)
 
     println(ZIP)
 
-    def Order = findTestData('IWP30PayNowCC').getValue('Order', row)
+    def Order = findTestData('IWPTestData/IWP30PayNowCC').getValue('Order', row)
 
     println(Order)
 
-    def CompanyName = findTestData('IWP30PayNowCC').getValue('CompanyName', row)
+    def CompanyName = findTestData('IWPTestData/IWP30PayNowCC').getValue('CompanyName', row)
 
     println(CompanyName)
 
-    def Email = findTestData('IWP30PayNowCC').getValue('Email', row)
+    def Email = findTestData('IWPTestData/IWP30PayNowCC').getValue('Email', row)
 
     println(Email)
 
-    def UDF1 = findTestData('IWP30PayNowCC').getValue('UDF1', row)
+    def UDF1 = findTestData('IWPTestData/IWP30PayNowCC').getValue('UDF1', row)
 
     println(UDF1)
 
-    def UDF2 = findTestData('IWP30PayNowCC').getValue('UDF2', row)
+    def UDF2 = findTestData('IWPTestData/IWP30PayNowCC').getValue('UDF2', row)
 
     println(UDF2)
 
-    def UDF3 = findTestData('IWP30PayNowCC').getValue('UDF3', row)
+    def UDF3 = findTestData('IWPTestData/IWP30PayNowCC').getValue('UDF3', row)
 
     println(UDF3)
 
-    def UDF4 = findTestData('IWP30PayNowCC').getValue('UDF4', row)
+    def UDF4 = findTestData('IWPTestData/IWP30PayNowCC').getValue('UDF4', row)
 
     println(UDF4)
 
-    def UDF5 = findTestData('IWP30PayNowCC').getValue('UDF5', row)
+    def UDF5 = findTestData('IWPTestData/IWP30PayNowCC').getValue('UDF5', row)
 
     println(UDF5)
 
-    def UDF6 = findTestData('IWP30PayNowCC').getValue('UDF6', row)
+    def UDF6 = findTestData('IWPTestData/IWP30PayNowCC').getValue('UDF6', row)
 
     println(UDF6)
 
-    def UDF7 = findTestData('IWP30PayNowCC').getValue('UDF7', row)
+    def UDF7 = findTestData('IWPTestData/IWP30PayNowCC').getValue('UDF7', row)
 
     println(UDF7)
 
-    def UDF8 = findTestData('IWP30PayNowCC').getValue('UDF8', row)
+    def UDF8 = findTestData('IWPTestData/IWP30PayNowCC').getValue('UDF8', row)
 
     println(UDF8)
 
-    def UDF9 = findTestData('IWP30PayNowCC').getValue('UDF9', row)
+    def UDF9 = findTestData('IWPTestData/IWP30PayNowCC').getValue('UDF9', row)
 
     println(UDF9)
 
-    def UDF10 = findTestData('IWP30PayNowCC').getValue('UDF10', row)
+    def UDF10 = findTestData('IWPTestData/IWP30PayNowCC').getValue('UDF10', row)
 	
 	println(UDF10)
 	
 	
-	def AppID = findTestData('IWP30PayNowCC').getValue('AppID', row)
+	def AppID = findTestData('IWPTestData/IWP30PayNowCC').getValue('AppID', row)
 
 	println(AppID)
 	
-	def MessageVersion = findTestData('IWP30PayNowCC').getValue('MessageVersion', row)
+	def MessageVersion = findTestData('IWPTestData/IWP30PayNowCC').getValue('MessageVersion', row)
 	
 	println(MessageVersion)
     
-	def CCAmount = findTestData('IWP30PayNowCC').getValue('CCAmount', row)
+	def CCAmount = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCAmount', row)
 	
 	println(CCAmount)
 	
-	def CCUDF1 = findTestData('IWP30PayNowCC').getValue('CCUDF1', row)
+	def CCUDF1 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCUDF1', row)
 	
 	println(CCUDF1)
 	
-	def CCUDF2 = findTestData('IWP30PayNowCC').getValue('CCUDF2', row)
+	def CCUDF2 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCUDF2', row)
 	
 	println(CCUDF2)
 	
-	def CCUDF3 = findTestData('IWP30PayNowCC').getValue('CCUDF3', row)
+	def CCUDF3 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCUDF3', row)
 	
 	println(CCUDF3)
 	
-	def CCUDF4 = findTestData('IWP30PayNowCC').getValue('CCUDF4', row)
+	def CCUDF4 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCUDF4', row)
 	
 	println(CCUDF4)
 	
-	def CCUDF5 = findTestData('IWP30PayNowCC').getValue('CCUDF5', row)
+	def CCUDF5 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCUDF5', row)
 	
 	println(CCUDF5)
 	
-	def CCUDF6 = findTestData('IWP30PayNowCC').getValue('CCUDF6', row)
+	def CCUDF6 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCUDF6', row)
 	
 	println(CCUDF6)
 	
-	def CCUDF7 = findTestData('IWP30PayNowCC').getValue('CCUDF7', row)
+	def CCUDF7 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCUDF7', row)
 	
 	println(CCUDF7)
 	
-	def CCUDF8 = findTestData('IWP30PayNowCC').getValue('CCUDF8', row)
+	def CCUDF8 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCUDF8', row)
 	
 	println(CCUDF8)
 	
-	def CCUDF9 = findTestData('IWP30PayNowCC').getValue('CCUDF9', row)
+	def CCUDF9 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCUDF9', row)
 	
 	println(CCUDF9)
 	
-	def CCUDF10 = findTestData('IWP30PayNowCC').getValue('CCUDF10', row)
+	def CCUDF10 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCUDF10', row)
 	
 	println(CCUDF10)
 	
-	def CCName = findTestData('IWP30PayNowCC').getValue('CCName', row)
+	def CCName = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCName', row)
 	
 	println(CCName)
 	
-	def CCCardNum = findTestData('IWP30PayNowCC').getValue('CCCardNum', row)
+	def CCCardNum = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCCardNum', row)
 	
 	println(CCCardNum)
 	
-	def CCSPC = findTestData('IWP30PayNowCC').getValue('CCSPC', row)
+	def CCSPC = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCSPC', row)
 	
 	println(CCSPC)
 	
-	def CCExpM = findTestData('IWP30PayNowCC').getValue('CCExpM', row)
+	def CCExpM = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCExpM', row)
 	
 	println(CCExpM)
 	
-	def CCExpY = findTestData('IWP30PayNowCC').getValue('CCExpY', row)
+	def CCExpY = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCExpY', row)
 	
 	println(CCExpY)
 	
-	def CCDate = findTestData('IWP30PayNowCC').getValue('CCDate', row)
+	def CCDate = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCDate', row)
 	
 	println(CCDate)
 	
-	def CCAL1 = findTestData('IWP30PayNowCC').getValue('CCAL1', row)
+	def CCAL1 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCAL1', row)
 	
 	println(CCAL1)
 	
-	def CCAL2 = findTestData('IWP30PayNowCC').getValue('CCAL2', row)
+	def CCAL2 = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCAL2', row)
 	
 	println(CCAL2)
 	
-	def CCZIP = findTestData('IWP30PayNowCC').getValue('CCZIP', row)
+	def CCZIP = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCZIP', row)
 	
 	println(CCZIP)
 	
-	def CCEmail = findTestData('IWP30PayNowCC').getValue('CCEmail', row)
+	def CCEmail = findTestData('IWPTestData/IWP30PayNowCC').getValue('CCEmail', row)
 	
 	println(CCEmail)
 	

@@ -23,11 +23,11 @@ import org.openqa.selenium.Keys as Keys
  * 
  * 	
  */
-	def numOfRows = findTestData('IWP30PayNowCC').getRowNumbers()
+	def numOfRows = findTestData('IWPTestData/IWP30PayNowCC').getRowNumbers()
 
 	println(numOfRows)
 
-	def dataFile = "IWP30PayNowCC"
+	def dataFile = "IWPTestData/IWP30PayNowCC"
 
 
 // For each row in the spreadsheet, execute the given steps	

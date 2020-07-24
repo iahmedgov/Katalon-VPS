@@ -16,11 +16,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 
-	def numOfRows = findTestData('VerifyUINoCFCCTestData').getRowNumbers()
+	def numOfRows = findTestData('IWPTestData/VerifyUINoCFCCTestData').getRowNumbers()
 	
 	println(numOfRows)
 	
-	def dataFile = "VerifyUINoCFCCTestData"
+	def dataFile = "IWPTestData/VerifyUINoCFCCTestData"
 
 	for (def row = 1; row <= numOfRows; row++) {
 
@@ -168,23 +168,23 @@ import internal.GlobalVariable as GlobalVariable
 		
 // Get Verification data from Excel spreadsheet
 		
-		def Amount = findTestData('VerifyUINoCFCCTestData').getValue('CCAmount', row)
-		def UDF2 = findTestData('VerifyUINoCFCCTestData').getValue('CCUDF2', row)
-		def UDF3 = findTestData('VerifyUINoCFCCTestData').getValue('CCUDF3', row)
-		def UDF7 = findTestData('VerifyUINoCFCCTestData').getValue('CCUDF7', row)
-		def UDF8 = findTestData('VerifyUINoCFCCTestData').getValue('CCUDF8', row)
-		def CName = findTestData('VerifyUINoCFCCTestData').getValue('CCName', row)
-		def CardType = findTestData('VerifyUINoCFCCTestData').getValue('VerCardType', row)
-		def Last4 = findTestData('VerifyUINoCFCCTestData').getValue('VerLast4', row)
-		def CExp = findTestData('VerifyUINoCFCCTestData').getValue('VerExp', row)
-		def AL1 = findTestData('VerifyUINoCFCCTestData').getValue('CCAL1', row)
-		def AL2 = findTestData('VerifyUINoCFCCTestData').getValue('CCAL2', row)
-		def City = findTestData('VerifyUINoCFCCTestData').getValue('VerCity', row)
-		def State = findTestData('VerifyUINoCFCCTestData').getValue('VerState', row)
-		def CZIP = findTestData('VerifyUINoCFCCTestData').getValue('CCZIP', row)
-		def Email = findTestData('VerifyUINoCFCCTestData').getValue('CCEmail', row)
-		def State2 = findTestData('VerifyUINoCFCCTestData').getValue('VerState2', row)
-		def CName2 = findTestData('VerifyUINoCFCCTestData').getValue('VerCCName', row)
+		def Amount = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('CCAmount', row)
+		def UDF2 = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('CCUDF2', row)
+		def UDF3 = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('CCUDF3', row)
+		def UDF7 = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('CCUDF7', row)
+		def UDF8 = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('CCUDF8', row)
+		def CName = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('CCName', row)
+		def CardType = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('VerCardType', row)
+		def Last4 = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('VerLast4', row)
+		def CExp = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('VerExp', row)
+		def AL1 = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('CCAL1', row)
+		def AL2 = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('CCAL2', row)
+		def City = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('VerCity', row)
+		def State = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('VerState', row)
+		def CZIP = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('CCZIP', row)
+		def Email = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('CCEmail', row)
+		def State2 = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('VerState2', row)
+		def CName2 = findTestData('IWPTestData/VerifyUINoCFCCTestData').getValue('VerCCName', row)
 		
 		
 		

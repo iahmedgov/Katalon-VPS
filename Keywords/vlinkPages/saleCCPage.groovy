@@ -252,6 +252,7 @@ public class saleCCPage {
 						else {println("Transaction Type field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_MessageVersion'),30))
 						{
 			
@@ -261,6 +262,7 @@ public class saleCCPage {
 						else {println("Message Version field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_ApplicationId'),30))
 						{
 			
@@ -269,6 +271,7 @@ public class saleCCPage {
 						}
 						else {println("Application ID field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_Username'),30))
 						{
@@ -278,6 +281,7 @@ public class saleCCPage {
 						}
 						else {println("Username field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_Password'),30))
 						{
@@ -288,6 +292,7 @@ public class saleCCPage {
 						else {println("Password field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_ResponseFormat'),30))
 						{
 			
@@ -296,6 +301,7 @@ public class saleCCPage {
 						}
 						else {println("Response Format field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_Category'),30))
 						{
@@ -306,6 +312,7 @@ public class saleCCPage {
 						else {println("Category field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_TransactionID'),30))
 						{
 			
@@ -315,6 +322,7 @@ public class saleCCPage {
 						else {println("Transaction ID field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_ApprovalCode'),30))
 						{
 			
@@ -324,6 +332,7 @@ public class saleCCPage {
 						else {println("Approval Code field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_CardName'),30))
 						{
 			
@@ -333,6 +342,7 @@ public class saleCCPage {
 						else {println("Card Name field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_AL1'),30))
 						{
 			
@@ -342,6 +352,7 @@ public class saleCCPage {
 						else {println("Address Line 1 field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_AL2'),30))
 						{
 			
@@ -351,6 +362,7 @@ public class saleCCPage {
 						else {println("Address Line 2 field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_CardCity'),30))
 						{
 			
@@ -360,6 +372,7 @@ public class saleCCPage {
 						else {println("City field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_CardState'),30))
 						{
 			
@@ -368,6 +381,7 @@ public class saleCCPage {
 						}
 						else {println("State field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_CardZIP'),30))
 						{
@@ -377,6 +391,7 @@ public class saleCCPage {
 						}
 						else {println("ZIP field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_CountryID'),30))
 						{
@@ -387,6 +402,7 @@ public class saleCCPage {
 						else {println("Country ID field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_Amount'),30))
 						{
 			
@@ -396,6 +412,7 @@ public class saleCCPage {
 						else {println("Amount field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_CardNumber'),30))
 						{
 			
@@ -414,6 +431,7 @@ public class saleCCPage {
 						}
 						else {println("Expiry Month field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_ExpYear'),30))
 						{
@@ -424,6 +442,7 @@ public class saleCCPage {
 						else {println("Expiry Year field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_CVV'),30))
 						{
 			
@@ -432,6 +451,7 @@ public class saleCCPage {
 						}
 						else {println("CVV Data field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_CVVstate'),30))
 						{
@@ -442,6 +462,7 @@ public class saleCCPage {
 						else {println("CVV State field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_TrackData'),30))
 						{
 			
@@ -451,6 +472,7 @@ public class saleCCPage {
 						else {println("Track Data field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_Track1Data'),30))
 						{
 			
@@ -459,6 +481,7 @@ public class saleCCPage {
 						}
 						else {println("Track 1 Data field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_Track2Data'),30))
 						{
@@ -468,6 +491,7 @@ public class saleCCPage {
 						}
 						else {println("Track 2 Data field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_POSEntryMode'),30))
 						{
@@ -478,6 +502,7 @@ public class saleCCPage {
 						else {println("POS Entry Mode field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_Email'),30))
 						{
 			
@@ -496,6 +521,7 @@ public class saleCCPage {
 						}
 						else {println("Order Number field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_TaxAmount'),30))
 						{
@@ -506,6 +532,7 @@ public class saleCCPage {
 						else {println("Tax Amount field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_ChargeDescription'),30))
 						{
 			
@@ -515,6 +542,7 @@ public class saleCCPage {
 						else {println("Charge Description field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_CAN'),30))
 						{
 			
@@ -523,6 +551,7 @@ public class saleCCPage {
 						}
 						else {println("CAN field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_BillPaymentIndicator'),30))
 						{
@@ -533,6 +562,7 @@ public class saleCCPage {
 						else {println("Bill Payment Indicator field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_UDF1'),30))
 						{
 			
@@ -541,6 +571,7 @@ public class saleCCPage {
 						}
 						else {println("UDF1 field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_UDF2'),30))
 						{
@@ -551,6 +582,7 @@ public class saleCCPage {
 						else {println("UDF2 field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_UDF3'),30))
 						{
 			
@@ -559,6 +591,7 @@ public class saleCCPage {
 						}
 						else {println("UDF3 field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_UDF4'),30))
 						{
@@ -578,6 +611,7 @@ public class saleCCPage {
 						}
 						else {println("UDF5 field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_UDF6'),30))
 						{
@@ -588,6 +622,7 @@ public class saleCCPage {
 						else {println("UDF6 field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_UDF7'),30))
 						{
 			
@@ -597,6 +632,7 @@ public class saleCCPage {
 						else {println("UDF7 field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_UDF8'),30))
 						{
 			
@@ -605,6 +641,7 @@ public class saleCCPage {
 						}
 						else {println("UDF8 field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_UDF9'),30))
 						{
@@ -614,6 +651,7 @@ public class saleCCPage {
 						}
 						else {println("UDF9 field is either missing or not modifiable on Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_UDF10'),30))
 						{
@@ -624,6 +662,7 @@ public class saleCCPage {
 						else {println("UDF10 field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_CardOnFileIndicator'),30))
 						{
 			
@@ -633,6 +672,7 @@ public class saleCCPage {
 						else {println("COFIndicator Data field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_StoredCredentialIndicator'),30))
 						{
 			
@@ -642,6 +682,7 @@ public class saleCCPage {
 						else {println("COF Stored Credential Indicator Data field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
 			
+						
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_COFScheduledIndicator'),30))
 						{
 			
@@ -650,6 +691,7 @@ public class saleCCPage {
 						}
 						else {println("COF Schedule Indicator field is either missing or not modifiable on Credit Card Payment Entry page")}
 			
+						
 			
 						if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_COFTransactionInitiatedBy'),30))
 						{
@@ -665,7 +707,7 @@ public class saleCCPage {
 						
 						// Select the Process VLink Transaction button
 			
-						WebUI.click(findTestObject('Object Repository/VLink/Page_CCSale/btn_ProcessVLinkTran'))
+						WebUI.click(findTestObject('Object Repository/VLink/Page_CCSale/btn_ProcessVLinkTransaction'))
 			
 						Thread.sleep(5000)
 			

@@ -47,6 +47,8 @@ WebUI.click(findTestObject('Sale Payment Entry/Submit'))
 
 
 
+
+
 WebUI.verifyTextPresent('Transaction Successful',true)
 
 

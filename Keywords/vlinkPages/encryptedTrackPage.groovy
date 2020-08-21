@@ -660,15 +660,15 @@ public class encryptedTrackPage {
 
 
 			// Select the Generate Remittance ID button
-			
+
 			WebUI.click(findTestObject('Object Repository/VLink/Page_EncryptedTrack/btn_GenerateRemID'))
-			
+
 			Thread.sleep(1000)
 
 			// Select the Process VLink Transaction button
 
 			WebUI.click(findTestObject('Object Repository/VLink/Page_EncryptedTrack/btn_ProcessVLinkTran'))
-			
+
 			Thread.sleep(5000)
 
 

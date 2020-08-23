@@ -83,8 +83,9 @@ public class voidCCPage {
 		// End of getData
 	}
 
-
-
+//	findTestObject('Object Repository/VLink/Page_CCVoid/txt_ApplicationID')
+	
+	
 	@Keyword
 	def setDataVCC(int rowS, String dataFileS) {
 
@@ -94,7 +95,7 @@ public class voidCCPage {
 
 		// Verify if we are on Credit Card Void page and populate the page
 
-		if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Original Transaction Type_original_transaction_type'), 30))
+		if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_OriginalTransactionType'), 30))
 		{
 
 			println("We are on Void Credit Card Page, start populating")
@@ -103,157 +104,157 @@ public class voidCCPage {
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Transaction Type_transaction_type'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_TransactionType'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Transaction Type_transaction_type'),Void_TranType)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_TransactionType'),Void_TranType)
 
 			}
 			else {println("Transaction Type field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Message Version _message_version'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_MessageVersion'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Message Version _message_version'),Void_MV)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_MessageVersion'),Void_MV)
 
 			}
 			else {println("Message Version field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Remittance Id_remittance_id'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_RemID'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Remittance Id_remittance_id'),GlobalVariable.VLinkSaleRemID)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_RemID'),GlobalVariable.VLinkSaleRemID)
 
 			}
 			else {println("Remittance ID field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Application Id_application_id'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_ApplicationID'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Application Id_application_id'),Void_AppID)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_ApplicationID'),Void_AppID)
 
 			}
 			else {println("Application ID field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Username_username'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_Username'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Username_username'),Void_Username)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_Username'),Void_Username)
 
 			}
 			else {println("Username field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Password_password'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_Password'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Password_password'),Void_Password)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_Password'),Void_Password)
 
 			}
 			else {println("Password field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Response Format_response_format'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_ResponseFormat'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Response Format_response_format'),Void_ResFormat)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_ResponseFormat'),Void_ResFormat)
 
 			}
 			else {println("Response Format field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Transaction ID_transaction_id'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_TransactionID'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Transaction ID_transaction_id'),GlobalVariable.VLinkSaleTranxID)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_TransactionID'),GlobalVariable.VLinkSaleTranxID)
 
 			}
 			else {println("Transaction ID field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Original Transaction Type_original_transaction_type'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_OriginalTransactionType'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Original Transaction Type_original_transaction_type'),Void_OrigTranType)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_OriginalTransactionType'),Void_OrigTranType)
 
 			}
 			else {println("Original Transaction Type field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Track Data_track_data'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_TrackData'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Track Data_track_data'),Void_TrackData)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_TrackData'),Void_TrackData)
 
 			}
 			else {println("Track Data field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Track 1 Data_track_1_data'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_Track1Data'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Track 1 Data_track_1_data'),Void_Track1Data)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_Track1Data'),Void_Track1Data)
 
 			}
 			else {println("Track 1 Data field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Track 2 Data_track_2_data'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_Track2Data'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Track 2 Data_track_2_data'),Void_Track2Data)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_Track2Data'),Void_Track2Data)
 
 			}
 			else {println("Track 2 Data field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Tax Amount_tax_amount'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_TaxAmount'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Tax Amount_tax_amount'),Void_TaxAmount)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_TaxAmount'),Void_TaxAmount)
 
 			}
 			else {println("Tax Amount field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Client Account Number_client_account_number'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_CAN'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_Client Account Number_client_account_number'),Void_CAN)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_CAN'),Void_CAN)
 
 			}
 			else {println("CAN field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 
-			if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_user_defined2_user_defined2'),30))
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCVoid/txt_UDF2'),30))
 			{
 
-				WebUI.setText(findTestObject('Object Repository/Page_QAVLinkCCVoid/input_user_defined2_user_defined2'),Void_UDF2)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCVoid/txt_UDF2'),Void_UDF2)
 
 			}
 			else {println("UDF2 field is either missing or not modifiable on Void Credit Card Ppage")}
 
 
 			// Select the Process VLink Transaction button
-			WebUI.click(findTestObject('Object Repository/Page_QAVLinkCCVoid/btn_SubmitTransaction'))
+			WebUI.click(findTestObject('Object Repository/VLink/Page_CCVoid/btn_ProcessVLinkTransaction'))
 			Thread.sleep(2000)
 
 

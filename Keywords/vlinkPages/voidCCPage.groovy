@@ -83,9 +83,9 @@ public class voidCCPage {
 		// End of getData
 	}
 
-//	findTestObject('Object Repository/VLink/Page_CCVoid/txt_ApplicationID')
-	
-	
+	//	findTestObject('Object Repository/VLink/Page_CCVoid/txt_ApplicationID')
+
+
 	@Keyword
 	def setDataVCC(int rowS, String dataFileS) {
 
@@ -258,7 +258,7 @@ public class voidCCPage {
 			Thread.sleep(2000)
 
 
-			
+
 
 			// End of if statement
 		}

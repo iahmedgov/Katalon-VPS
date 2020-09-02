@@ -32,98 +32,98 @@ public class captureCCPage {
 			@Keyword
 			def getDataCCC(int rowM, String dataFileM) {
 		
-				TranType = findTestData(dataFileM).getValue('TranType', rowM)
+				TranType = findTestData(dataFileM).getValue('Cap_TranType', rowM)
 		
 				println(TranType)
 		
-				MV = findTestData(dataFileM).getValue('MV', rowM)
+				MV = findTestData(dataFileM).getValue('Cap_MV', rowM)
 		
 				println(MV)
 		
-				AppID = findTestData(dataFileM).getValue('AppID', rowM)
+				AppID = findTestData(dataFileM).getValue('Cap_AppID', rowM)
 		
 				println(AppID)
 		
-				Username = findTestData(dataFileM).getValue('Username', rowM)
+				Username = findTestData(dataFileM).getValue('Cap_Username', rowM)
 		
 				println(Username)
 		
-				Password = findTestData(dataFileM).getValue('Password', rowM)
+				Password = findTestData(dataFileM).getValue('Cap_Password', rowM)
 		
 				println(Password)
 		
-				ResFormat = findTestData(dataFileM).getValue('ResFormat', rowM)
+				ResFormat = findTestData(dataFileM).getValue('Cap_ResFormat', rowM)
 		
 				println(ResFormat)
 		
 						
-				TranID = findTestData(dataFileM).getValue('TranID', rowM)
+				TranID = findTestData(dataFileM).getValue('Cap_TranID', rowM)
 		
 				println(TranID)
 		
 				
-				Amount = findTestData(dataFileM).getValue('Amount', rowM)
+				Amount = findTestData(dataFileM).getValue('Cap_Amount', rowM)
 		
 				println(Amount)
 		
 				
-				OrderNumber = findTestData(dataFileM).getValue('OrderNumber', rowM)
+				OrderNumber = findTestData(dataFileM).getValue('Cap_Order', rowM)
 		
 				println(OrderNumber)
 		
-				TaxAmount = findTestData(dataFileM).getValue('TaxAmount', rowM)
+				TaxAmount = findTestData(dataFileM).getValue('Cap_Tax', rowM)
 		
 				println(TaxAmount)
 		
-				ChargeDesc = findTestData(dataFileM).getValue('ChargeDesc', rowM)
+				ChargeDesc = findTestData(dataFileM).getValue('Cap_Charge', rowM)
 		
 				println(ChargeDesc)
 		
-				CAN = findTestData(dataFileM).getValue('CAN', rowM)
+				CAN = findTestData(dataFileM).getValue('Cap_CAN', rowM)
 		
 				println(CAN)
 		
-				BillPaymentInd = findTestData(dataFileM).getValue('BillPaymentInd', rowM)
+				BillPaymentInd = findTestData(dataFileM).getValue('Cap_BillPayInd', rowM)
 		
 				println(BillPaymentInd)
 		
-				UDF1 = findTestData(dataFileM).getValue('UDF1', rowM)
+				UDF1 = findTestData(dataFileM).getValue('Cap_UDF1', rowM)
 		
 				println(UDF1)
 		
-				UDF2 = findTestData(dataFileM).getValue('UDF2', rowM)
+				UDF2 = findTestData(dataFileM).getValue('Cap_UDF2', rowM)
 		
 				println(UDF2)
 		
-				UDF3 = findTestData(dataFileM).getValue('UDF3', rowM)
+				UDF3 = findTestData(dataFileM).getValue('Cap_UDF3', rowM)
 		
 				println(UDF3)
 		
-				UDF4 = findTestData(dataFileM).getValue('UDF4', rowM)
+				UDF4 = findTestData(dataFileM).getValue('Cap_UDF4', rowM)
 		
 				println(UDF4)
 		
-				UDF5 = findTestData(dataFileM).getValue('UDF5', rowM)
+				UDF5 = findTestData(dataFileM).getValue('Cap_UDF5', rowM)
 		
 				println(UDF5)
 		
-				UDF6 = findTestData(dataFileM).getValue('UDF6', rowM)
+				UDF6 = findTestData(dataFileM).getValue('Cap_UDF6', rowM)
 		
 				println(UDF6)
 		
-				UDF7 = findTestData(dataFileM).getValue('UDF7', rowM)
+				UDF7 = findTestData(dataFileM).getValue('Cap_UDF7', rowM)
 		
 				println(UDF7)
 		
-				UDF8 = findTestData(dataFileM).getValue('UDF8', rowM)
+				UDF8 = findTestData(dataFileM).getValue('Cap_UDF8', rowM)
 		
 				println(UDF8)
 		
-				UDF9 = findTestData(dataFileM).getValue('UDF9', rowM)
+				UDF9 = findTestData(dataFileM).getValue('Cap_UDF9', rowM)
 		
 				println(UDF9)
 		
-				UDF10 = findTestData(dataFileM).getValue('UDF10', rowM)
+				UDF10 = findTestData(dataFileM).getValue('Cap_UDF10', rowM)
 		
 				println(UDF10)
 		

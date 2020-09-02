@@ -21,10 +21,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class authCCPage {
-	
-	
-	
-	
+
+
+
+
 	String TranType,MV,AppID,Username,Password,ResFormat,Category,TranID,ApprovalCode,CardName,AL1,AL2,City,State,ZIP,CountryID
 	String Amount,CardNumber,ExM,ExY,CVVData,CVVState,TrackData,Track1Data,Track2Data,POSEntryMode,Email,OrderNumber,TaxAmount
 	String ChargeDesc,CAN,BillPaymentInd,UDF1,UDF2,UDF3,UDF4,UDF5,UDF6,UDF7,UDF8,UDF9,UDF10
@@ -226,7 +226,7 @@ public class authCCPage {
 
 	}
 
-	
+
 
 	@Keyword
 	def setDataACC(int rowS, String dataFileS) {
@@ -719,7 +719,7 @@ public class authCCPage {
 
 
 	}
-	
-	
-	
+
+
+
 }

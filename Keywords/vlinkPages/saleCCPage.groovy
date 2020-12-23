@@ -234,7 +234,7 @@ public class saleCCPage {
 
 		// Verify if we are on Credit Card Payment Entry page and populate the page
 
-		if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_Amount'), 30))
+		if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_CardNumber'), 30))
 		{
 
 			println("We are on Credit Card Payment Entry page, start populating")
@@ -259,7 +259,20 @@ public class saleCCPage {
 			}
 			else {println("Message Version field is either missing or not modifiable on Credit Card Payment Entry page")}
 
+			
+			
+			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_RemID'),30))
+			{
 
+				def genRemID = org.apache.commons.lang.RandomStringUtils.random(12, true, true)
+				WebUI.setText(findTestObject('Object Repository/VLink/Page_CCSale/txt_RemID'),genRemID)
+
+			}
+			else {println("Remittance ID field is either missing or not modifiable on Credit Card Payment Entry page")}
+
+			
+			
+			
 
 			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_ApplicationId'),30))
 			{

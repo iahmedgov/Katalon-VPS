@@ -25,11 +25,11 @@ import internal.GlobalVariable as GlobalVariable
  */
 
 
-def numOfRows = findTestData('VLink/DemoVlinkEncryptedTrackTestData').getRowNumbers()
+def numOfRows = findTestData('Demo/VLinkTestData/DemoVlinkEncryptedTrackTestData').getRowNumbers()
 
 	println(numOfRows)
 
-	def dataFile = "VLink/DemoVlinkEncryptedTrackTestData"
+	def dataFile = "Demo/VLinkTestData/DemoVlinkEncryptedTrackTestData"
 
 
 // For each row in the spreadsheet, execute the given steps

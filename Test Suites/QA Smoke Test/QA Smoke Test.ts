@@ -20,6 +20,12 @@
       <guid>cf786dee-518a-43ea-86cf-df34e839fe0c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/VLink/VLinkSale-ReqFieldsOnly</testCaseId>
+      <testCaseId>Test Cases/VLink/QA/VLinkSale-ReqFieldsOnly</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9db43c5b-4bd0-432f-9c53-9746fe0ebc72</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/VLink/QA/VLinkSale-Successful</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

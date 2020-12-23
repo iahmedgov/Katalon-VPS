@@ -39,4 +39,9 @@
       <initValue>'987'</initValue>
       <name>VLinkSaleTranxID</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-algorithm.govolution.com/vlinktest/QA/version_2_0/'</initValue>
+      <name>VLinkURL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

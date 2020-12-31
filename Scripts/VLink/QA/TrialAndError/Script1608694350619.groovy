@@ -39,21 +39,24 @@ FileOutputStream outFile =new FileOutputStream(new File("C:\\KatalonData\\Sample
 workbook.write(outFile);
 outFile.close();*/
 
-String resColumn = "Result"
-String datCloumn = "Date"
-String resText = "Fail"
-//String datText = "December 13"
 
 Date today = new Date()
 println (today)
+
+String resText = "Pass"
 String datText = today
+String resColumn = "Result"
+String datCloumn = "Date"
+String fileLoc = "C:\\KatalonData\\SampleTestdata.xlsx"
+String nameSheet = "Sheet1"
+
 
 //int rowNumber = 1
 
 for (def rowNumber = 1; rowNumber <= 15; rowNumber++)
 {
 
-CustomKeywords.'pages.WriteExcel.demoKey'(resText,datText,resColumn,datCloumn,rowNumber)
+CustomKeywords.'pages.WriteExcel.demoKey'(resText,datText,resColumn,datCloumn,fileLoc,nameSheet,rowNumber)
 }
 //System.out.println(Credential1)
 //System.out.println(Credential2)

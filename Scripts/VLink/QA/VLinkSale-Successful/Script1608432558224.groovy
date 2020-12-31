@@ -27,6 +27,18 @@ import com.kms.katalon.core.testdata.reader.ExcelFactory
 	println "Number of Rows: " +  numOfRows
 	println "Name of Sheet: " + nameOfSheet*/
 	
+
+		//Date today = new Date()
+		//println (today)
+		
+		String resText = "Fail"
+		//String datText = today
+		String resColumn = "Result"
+		String datCloumn = "Date"
+		String fileLoc = "C:\\KatalonData\\VLinkCCTestData.xlsx"
+		String nameSheet = "CCSaleData"
+
+
 	
 
 		def numOfRows = findTestData('QA/VLinkTestData/VLinkCCTestData').getRowNumbers()
@@ -40,6 +52,10 @@ import com.kms.katalon.core.testdata.reader.ExcelFactory
 		for (def row = 1; row <= numOfRows; row++) {
 			
 			System.out.println('Begin Record Number: ' + row)
+			
+			Date today = new Date()
+			println (today)
+			String datText = today
 			
 //=======================================
 			
@@ -61,11 +77,15 @@ import com.kms.katalon.core.testdata.reader.ExcelFactory
 			{
 				println "Transaction Approved, no errors text is present on the Confirmation page"
 				System.out.println('Pass Record Number: ' + row)
+				resText = "Pass"
+				CustomKeywords.'pages.WriteExcel.demoKey'(resText,datText,resColumn,datCloumn,fileLoc,nameSheet,row)
 			}
 			else 
 			{
 				println "Transaction Approved, no errors text is not present on the Confirmation page"
 				System.out.println('Fail Record Number: ' + row)
+				resText = "Fail"
+				CustomKeywords.'pages.WriteExcel.demoKey'(resText,datText,resColumn,datCloumn,fileLoc,nameSheet,row)
 			}
 	
 //=======================================

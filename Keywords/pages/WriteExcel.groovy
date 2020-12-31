@@ -64,10 +64,12 @@ public class WriteExcel {
 	private  static int i=0;
 	
 	@Keyword
-	public static void demoKey(String resultText,String dateText, String resultColumn, String dateColumn, int rowNumber) throws IOException{
-		FileInputStream fis = new FileInputStream("C:\\KatalonData\\SampleTestdata.xlsx");
+	public static void demoKey(String resultText,String dateText, String resultColumn, String dateColumn, String fileLocation, String sheetName, int rowNumber) throws IOException{
+		//FileInputStream fis = new FileInputStream("C:\\KatalonData\\SampleTestdata.xlsx");
+		FileInputStream fis = new FileInputStream(fileLocation);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
-		XSSFSheet sheet = workbook.getSheet("Sheet1");
+		//XSSFSheet sheet = workbook.getSheet("Sheet1");
+		XSSFSheet sheet = workbook.getSheet(sheetName);
 		int rowCount = rowNumber;
 		if (resultColumn =='Result'){
 			Row row = sheet.getRow(rowCount);
@@ -87,7 +89,8 @@ public class WriteExcel {
 						//i = rowCount+1;
 		}
 	
-	FileOutputStream fos = new FileOutputStream("C:\\KatalonData\\SampleTestdata.xlsx");
+	//FileOutputStream fos = new FileOutputStream("C:\\KatalonData\\SampleTestdata.xlsx");
+	FileOutputStream fos = new FileOutputStream(fileLocation);
 		workbook.write(fos);
 		fos.close();
 	}

@@ -44,4 +44,9 @@
       <initValue>'https://dev-algorithm.govolution.com/vlinktest/QA/version_2_0/'</initValue>
       <name>VLinkURL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://qa.velocitypayment.com/ebills/billLookup/deep'</initValue>
+      <name>MultiBillURL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

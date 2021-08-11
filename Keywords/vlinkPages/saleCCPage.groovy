@@ -259,8 +259,8 @@ public class saleCCPage {
 			}
 			else {println("Message Version field is either missing or not modifiable on Credit Card Payment Entry page")}
 
-			
-			
+
+
 			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_RemID'),30))
 			{
 
@@ -270,9 +270,9 @@ public class saleCCPage {
 			}
 			else {println("Remittance ID field is either missing or not modifiable on Credit Card Payment Entry page")}
 
-			
-			
-			
+
+
+
 
 			if (WebUI.verifyElementPresent(findTestObject('Object Repository/VLink/Page_CCSale/txt_ApplicationId'),30))
 			{

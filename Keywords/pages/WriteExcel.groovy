@@ -58,11 +58,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
 public class WriteExcel {
-	
-	
-	
+
+
+
 	private  static int i=0;
-	
+
 	@Keyword
 	public static void demoKey(String resultText,String dateText, String resultColumn, String dateColumn, String fileLocation, String sheetName, int rowNumber) throws IOException{
 		//FileInputStream fis = new FileInputStream("C:\\KatalonData\\SampleTestdata.xlsx");
@@ -79,27 +79,27 @@ public class WriteExcel {
 			System.out.println("resultText: " + resultText)
 			i = 0;
 		}
-	
+
 		if (dateColumn =='Date'){
 			Row row2 = sheet.getRow(rowCount);
 			Cell cell2 = row2.createCell(1,0);
 			cell2.setCellType(cell2.CELL_TYPE_STRING);
 			cell2.setCellValue(dateText);
 			System.out.println("dateText: " + dateText)
-						//i = rowCount+1;
+			//i = rowCount+1;
 		}
-	
-	//FileOutputStream fos = new FileOutputStream("C:\\KatalonData\\SampleTestdata.xlsx");
-	FileOutputStream fos = new FileOutputStream(fileLocation);
+
+		//FileOutputStream fos = new FileOutputStream("C:\\KatalonData\\SampleTestdata.xlsx");
+		FileOutputStream fos = new FileOutputStream(fileLocation);
 		workbook.write(fos);
 		fos.close();
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
 }

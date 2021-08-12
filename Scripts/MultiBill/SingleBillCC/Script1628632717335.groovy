@@ -17,60 +17,71 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://qa.velocitypayment.com/ebills/billLookup/deep')
+WebUI.openBrowser(GlobalVariable.MultiBillNoCFURL)
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/MultiBill/input_Search_searchInput'), '997033')
-
-WebUI.click(findTestObject('Object Repository/MultiBill/button_Search'))
-
-WebUI.click(findTestObject('MultiBill/AddtoCart'), FailureHandling.OPTIONAL)
-
-WebUI.delay(10)
-
-
-WebUI.verifyTextPresent('1 Item(s) Added to Cart', false)
-
-if (WebUI.verifyTextPresent('1 Item(s) Added to Cart', false)) {
-    println('Bill added to cart, continue executing test case')
-
-    WebUI.click(findTestObject('Object Repository/MultiBill/button_View Cart'))
-
-    WebUI.click(findTestObject('Object Repository/MultiBill/button_Checkout'))
-
-    WebUI.click(findTestObject('Object Repository/MultiBill/input_Pay by Credit or Branded Debit_paymentMethod'))
-
-    WebUI.click(findTestObject('Object Repository/MultiBill/input_Pay by Corporate Check_payNowSubmit'))
-
-    WebUI.setText(findTestObject('Object Repository/MultiBill/input__cardNumber'), '4111111111111111')
-
-    WebUI.setText(findTestObject('Object Repository/MultiBill/input__spc'), '125')
-
-    WebUI.selectOptionByValue(findTestObject('MultiBill/select_MM'), '5', true)
-
-    WebUI.selectOptionByValue(findTestObject('MultiBill/select_YYYY'), '2025', true)
-
-    WebUI.click(findTestObject('Object Repository/MultiBill/input_of Parcels_checkedAcceptCondition'))
-
-    WebUI.click(findTestObject('Object Repository/MultiBill/input_of Parcels_ccSubmit'))
-
-    WebUI.click(findTestObject('Object Repository/MultiBill/input_-_confirmNotifyAction'))
-
-    
+		def numOfRows = findTestData('QA/EnhancedMultiBillTestData/SingleBillCCTestData').getRowNumbers()
+		println("Number of Rows : " + numOfRows)
 		
-		if(WebUI.verifyElementText(findTestObject('Object Repository/MultiBill/h3_Successful Payment Receipt'), 'Successful Payment Receipt'))
-		{
-				println("Test Case Passed")
-		}
-		else
-				{println("Test Case Failed")}
-	
-	
-	
-	
-	
-} else {
-    println('Bill is already paid, move on to next test case')
-}
+		
+String DoExecute = Execute
+if (DoExecute.toUpperCase() == "Y")
+	{
+		println("Value of Execute is Y")
 
+
+		println("SearchString is : " + SearchString)
+		
+		WebUI.setText(findTestObject('Object Repository/MultiBill/input_Search_searchInput'), SearchString)
+		
+		WebUI.click(findTestObject('Object Repository/MultiBill/button_Search'))
+
+		if (findTestObject('Object Repository/MultiBill/AddtoCart')) {
+		    println('Add to Cart button found')
+		}
+
+		WebUI.click(findTestObject('Object Repository/MultiBill/AddtoCart'), FailureHandling.OPTIONAL)
+		
+		WebUI.delay(10)
+		
+		WebUI.verifyTextPresent('1 Item(s) Added to Cart', false)
+
+			if (WebUI.verifyTextPresent('1 Item(s) Added to Cart', false)) {
+			    println('Bill added to cart, continue executing test case')
+			
+			    WebUI.click(findTestObject('Object Repository/MultiBill/button_View Cart'))
+			
+			    WebUI.click(findTestObject('Object Repository/MultiBill/button_Checkout'))
+			
+			    WebUI.click(findTestObject('Object Repository/MultiBill/input_Pay by Credit or Branded Debit_paymentMethod'))
+			
+			    WebUI.click(findTestObject('Object Repository/MultiBill/input_Pay by Corporate Check_payNowSubmit'))
+			
+			    WebUI.setText(findTestObject('Object Repository/MultiBill/input__cardNumber'), CardNumber)
+			
+			    WebUI.setText(findTestObject('Object Repository/MultiBill/input__spc'), '125')
+			
+			    WebUI.selectOptionByValue(findTestObject('MultiBill/select_MM'), '5', true)
+			
+			    WebUI.selectOptionByValue(findTestObject('MultiBill/select_YYYY'), '2025', true)
+			
+			    WebUI.click(findTestObject('Object Repository/MultiBill/input_of Parcels_checkedAcceptCondition'))
+			
+			    WebUI.click(findTestObject('Object Repository/MultiBill/input_of Parcels_ccSubmit'))
+			
+			    WebUI.click(findTestObject('Object Repository/MultiBill/input_-_confirmNotifyAction'))
+			
+				    if (WebUI.verifyElementText(findTestObject('Object Repository/MultiBill/h3_Successful Payment Receipt'), 'Successful Payment Receipt')) {
+				        println('Test Case Passed')
+				    } else {
+				        println('Test Case Failed')
+				    }
+			} else {
+			    println('Bill is already paid, move on to next test case')
+			}
+
+	}
+	
+else
+	{println("Value of Execute is NOT Y")}

@@ -6,54 +6,61 @@
    <elementGuidId>ffd42fd2-b1fd-452a-99c4-012cedd83cfe</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.addTo.align-items-center.d-flex.justify-content-center.btn.py-1.btn.rounded-pill</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//tbody[@id='billSearchTableBody']/tr/td[8]/a</value>
       </entry>
       <entry>
+         <key>CSS</key>
+         <value>a.addTo.align-items-center.d-flex.justify-content-center.btn.py-1.btn.rounded-pill</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>id(&quot;billSearchTableBody&quot;)/tr[@class=&quot;ng-scope&quot;]/td[8]/a[@class=&quot;addTo align-items-center d-flex justify-content-center btn py-1 btn rounded-pill&quot;][count(. | //a[@ng-click = 'addToCart(bill);' and @class = 'addTo align-items-center d-flex justify-content-center btn py-1 btn rounded-pill' and @title = 'Add to Cart']) = count(//a[@ng-click = 'addToCart(bill);' and @class = 'addTo align-items-center d-flex justify-content-center btn py-1 btn rounded-pill' and @title = 'Add to Cart'])]</value>
+         <value>//*[@id = 'addToCartIcon']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-click</name>
       <type>Main</type>
       <value>addToCart(bill);</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>addTo align-items-center d-flex justify-content-center btn py-1 btn rounded-pill</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
       <value>Add to Cart</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;billSearchTableBody&quot;)/tr[@class=&quot;ng-scope&quot;]/td[8]/a[@class=&quot;addTo align-items-center d-flex justify-content-center btn py-1 btn rounded-pill&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>addToCartIcon</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

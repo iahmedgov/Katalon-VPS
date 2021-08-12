@@ -6,12 +6,16 @@
    <elementGuidId>6af14bde-6f5c-4971-88a8-1319eae72e77</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//input[@id='spc']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#spc</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='spc']</value>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @name = 'spc' and @id = 'spc' and @alt = 'Card Security Code']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -56,7 +60,7 @@
       <matchCondition>equals</matchCondition>
       <name>alt</name>
       <type>Main</type>
-      <value>Signature Panel Code</value>
+      <value>Card Security Code</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
